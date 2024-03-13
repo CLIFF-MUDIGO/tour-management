@@ -12,6 +12,7 @@ import SearchBar from '../shared/SearchBar';
 
 import ServicesList from './../services/ServicesList';
 import FeaturedTourList from './../components/Featured-tours/FeaturedTourList';
+import MasonImagesGallery from '../components/Image-gallery/MasonImagesGallery';
 
 
 const Home = () => (
@@ -23,7 +24,7 @@ const Home = () => (
           <Col lg='6'>
             <div className="hero__content">
               <div className="hero__subtitle d-flex align-items-center">
-                <Subtitle subtitle={"Know Before You Go"}/>
+                <Subtitle subtitle={"Know Before You Go By clive"}/>
                 <img src={worldImg} alt="" />
               </div>
               <h1>Traveling opens the door to creating <span className="highlight">memories</span></h1>
@@ -125,8 +126,40 @@ const Home = () => (
     </section>
 
     {/*========== experience section end ==========*/}
-    
 
+    {/*========== Gallery section start ========*/}
+    <section>
+      <Container>
+        <Row>
+          <Col lg='12'>
+            <Subtitle subtitle={'Gallery'}/>
+            <h2 className="gallery__title">Visit our customers tour gallery</h2>
+          </Col>
+          <Col lg='12'>
+            <MasonImagesGallery/>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+
+
+    {/*========== Gallery section end ==========*/}
+
+     {/*========== testimonial section start ==========*/}
+
+     <section>
+      <Container>
+        <Row>
+          <Col lg='12'>
+            <Subtitle subtitle={'Fans Love'}/>
+            <h2 className="testimonial__title">What our fans says about us</h2>
+          </Col>
+          
+        </Row>
+      </Container>
+     </section>
+     {/*========== testimonial section end = ==========*/}
+    
   </>
 );
 
