@@ -14,6 +14,7 @@ import ServicesList from './../services/ServicesList';
 import FeaturedTourList from './../components/Featured-tours/FeaturedTourList';
 import MasonImagesGallery from '../components/Image-gallery/MasonImagesGallery';
 import Testimonials from '../components/Testimonial/Testimonials';
+import Newsletter from '../shared/Newsletter';
 
 
 const Home = () => (
@@ -163,7 +164,7 @@ const Home = () => (
       </Container>
      </section>
      {/*========== testimonial section end = ==========*/}
-    
+    <Newsletter/>
   </>
 );
 
