@@ -46,9 +46,7 @@ const Footer = () => {
               <img src={logo} alt="" />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque quibusdam voluptas quidem ab quisquam? Repudiandae
-                vel, suscipit, repellat excepturi nulla dolores asperiores
-                iusto, fuga perspiciatis ut aliquam iure non nobis?
+                Doloremque quibusdam voluptas
               </p>
 
               <div className="social__links d-flex align-items-center gap-4">
@@ -97,7 +95,35 @@ const Footer = () => {
               ))}
             </ListGroup>
           </Col>
-          <Col lg="3"></Col>
+          <Col lg="3">
+            <h5 className="footer__link-title">Contact</h5>
+
+            <ListGroup className="footer__quick-links">
+             
+                <ListGroupItem  className="ps-0 border-0 d-flex align-items-center gap-3">
+                  <h6 className="mb-0 d-flex align-items-center gap-2">
+                    <span><i class="ri-map-pin-line"></i></span>
+                    Address:
+                  </h6>
+                  <p className="mb-0">Nairobi, Kenya</p>
+                </ListGroupItem>
+                <ListGroupItem  className="ps-0 border-0 d-flex align-items-center gap-3">
+                  <h6 className="mb-0 d-flex align-items-center gap-2">
+                    <span><i class="ri-mail-line"></i></span>
+                    Email:
+                  </h6>
+                  <p className="mb-0">cmudigo5@gmail.com</p>
+                </ListGroupItem>
+                <ListGroupItem  className="ps-0 border-0 d-flex align-items-center gap-3">
+                  <h6 className="mb-0 d-flex align-items-center gap-2">
+                    <span><i class="ri-phone-line"></i></span>
+                    Phone:
+                  </h6>
+                  <p className="mb-0">+254 705949828</p>
+                </ListGroupItem>
+           
+            </ListGroup>
+          </Col>
         </Row>
       </Container>
     </footer>
