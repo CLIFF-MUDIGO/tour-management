@@ -54,7 +54,7 @@ useEffect(() => {
         </Container>
       </section>
       
-     
+     <Newsletter/>
 
     </>
   );
